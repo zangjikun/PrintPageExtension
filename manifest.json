@@ -1,0 +1,67 @@
+{
+  "name": "Print Part",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Print part of web page.",
+  "default_locale": "en",
+  "icons": {
+    "16": "icon/icon16.png",
+    "19": "icon/icon19.png",
+    "24": "icon/icon24.png",
+    "32": "icon/icon32.png",
+    "38": "icon/icon38.png",
+    "48": "icon/icon48.png",
+    "64": "icon/icon64.png",
+    "128": "icon/icon128.png"
+  },
+
+  "background": {
+    "page": "chrome/background_page.html"
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "content/content.css"
+      ],
+
+      "js": [
+        "lib/jquery/lib.js",
+        "lib/jquery/jquery.dataset.js",
+        "lib/jquery/jquery.sf.boxify.js",
+        "lib/jquery/jquery.sf.klass.js",
+        "lib/jquery/jquery.sf.domselector.js",
+        "lib/jquery/jquery.sf.class.js",
+
+        "lib/sf/sf.js",
+        "lib/sf/class.js",
+        "lib/sf/classes/base.js",
+        "lib/sf/classes/accelerator.js",
+        "lib/sf/classes/hiliter.js",
+        "lib/sf/classes/selection.js",
+
+        "content/start.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file:///*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icon/icon19.png",
+      "48": "icon/icon48.png",
+      "64": "icon/icon64.png",
+      "128": "icon/icon128.png"
+    },
+    "default_title": "PrintPart"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ]
+}

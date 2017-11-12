@@ -1,0 +1,146 @@
+@import url(base.css);
+@import url(scrollbar.css);
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.header, .footer {
+    background-color: #32403C;
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFF;
+}
+
+.content {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1;
+}
+
+.content > * {
+    display: -webkit-box;
+    overflow: auto;
+}
+
+.col-side {
+    width: 200px;
+}
+
+.col-main {
+    -webkit-box-flex: 1;
+}
+
+.filler {
+    height: 1000px;
+    width: 50px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    display: block;
+    background-size: 180px auto;
+    border: 1px solid black;
+}
+
+
+/* select */
+.widget-select {
+    color: black;
+    width: 300px;
+    font: -webkit-small-control;
+    display: inline-block;
+	text-align:left;
+}
+
+.widget-select > * {
+    width: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+    padding-left: 2px;
+}
+
+.widget-select > input {
+    height: 20px;
+    border: 1px solid #aaa;
+    -webkit-appearance: menulist;
+    display: inline-block;
+	cursor:default;
+}
+
+.widget-select > ul, .widget-select > ul > li {
+    margin: 0px;
+    display: block;
+}
+
+.widget-select > ul {
+    margin: 0px;
+    position: absolute;
+    border: 1px solid #aaa;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    background-color: white;
+}
+
+.widget-select > ul > li {
+    background: no-repeat left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.widget-select > ul > li *, .widget-select > ul > li * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.widget-select > ul > li:hover {
+    color: white;
+    background-color: Highlight;
+    cursor: default;
+}
+
+.widget-select > input:not(:focus)+*:not(:active) {
+	display:none;
+}
+
+
+
+.tab-title {
+    display: block;
+    background: no-repeat left;
+    padding: 0px 2px;
+    padding-left: 20px;
+}
+
+#screenshot > img {
+    border: 1px solid black;
+}
+
+
+.col-main > img {
+    width: 100%;
+}

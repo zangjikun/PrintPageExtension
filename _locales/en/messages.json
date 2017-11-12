@@ -1,0 +1,38 @@
+{
+   "cancel": {
+      "description": "cancel",
+      "message": "cancel"
+   },
+   "print": {
+      "description": "print",
+      "message": "print"
+   },
+   "savethetrees_browserAction_title": {
+      "description": "tooltip over the browser action icon",
+      "message": "Print/take screenshot of page selections"
+   },
+   "savethetrees_error_install": {
+      "description": "Right after installation, it is required to reload already active tabs to use this extension",
+      "message": "Right after installation, it is required to reload already active tabs to use this extension"
+   },
+   "savethetrees_error_invalid_url": {
+      "description": "Due to Google Chrome restrictions, it is not possible to use this extension on this page",
+      "message": "Due to Google Chrome restrictions, it is not possible to use this extension on this page"
+   },
+   "savethetrees_error_new_print_tool": {
+      "description": "You will have to click on 'advanced parameters...' at the bottom left of the next page to print your selection. (Google Chrome version 13.x)",
+      "message": "You will have to click on 'advanced parameters...' at the bottom left of the next page to print your selection. (Google Chrome version 13.x)"
+   },
+   "savethetrees_extension_description": {
+      "description": "Extension description",
+      "message": "Print of only what matters! Make quick selections on a page and print!"
+   },
+   "savethetrees_extension_name": {
+      "description": "Extension name",
+      "message": "Save the trees (print & screenshot)"
+   },
+   "screenshot": {
+      "description": "take a screenshot",
+      "message": "take a screenshot"
+   }
+}
